@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 40" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
+  <path d="M10 20h105"/>
+  <path d="M185 20h105"/>
+  <path d="M150 20c-8-8-8-15 0-15s8 7 0 15Z"/>
+  <path d="M150 20c8-8 8-15 0-15s-8 7 0 15Z"/>
+  <path d="M150 20c-8 8-8 15 0 15s8-7 0-15Z"/>
+  <path d="M150 20c8 8 8 15 0 15s-8-7 0-15Z"/>
+  <circle cx="150" cy="20" r="2"/>
+</svg>
