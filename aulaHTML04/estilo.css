@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0; }
+  
+.titulo {
+    color: hotpink;}
+
+#descricao {
+    font-size: 20px;}
+
+.paragrafo-simples {
+    font-size: 16px;
+    color: lightgreen;}
+
+nav a {
+  color: burlywood;}
