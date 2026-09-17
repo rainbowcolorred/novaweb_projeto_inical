@@ -1,0 +1,825 @@
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Playfair+Display:wght@400;500;600&family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Configuração inicial */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f1e8;
+    color: #4a342b;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* Cabeçalho */
+header {
+    width: 100%;
+    height: 110px;
+    padding: 20px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f1e8;
+}
+
+.logo {
+    text-align: center;
+    line-height: 1;
+}
+
+.logo p {
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+
+.logo h1,
+.logo h2 {
+    font-family: "Allura", cursive;
+    font-size: 34px;
+    font-weight: normal;
+    color: #4a342b;
+}
+
+.logo span {
+    display: block;
+    margin-top: 4px;
+    font-family: "Poppins", sans-serif;
+    font-size: 8px;
+    letter-spacing: 2px;
+    color: #6b5146;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+header nav a {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #4a342b;
+    transition: 0.3s;
+}
+
+header nav a:hover {
+    color: #a85f55;
+}
+
+.acoes {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.acoes span {
+    font-size: 22px;
+    color: #4a342b;
+    cursor: pointer;
+}
+
+/* Página inicial */
+
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 7%;
+
+    background-image: url("../images/backgrounds/comidas-back.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-conteudo {
+    max-width: 750px;
+    width: 90%;
+    padding: 55px 60px;
+    text-align: center;
+
+    background-color: rgba(248, 241, 232, 0.78);
+    border-radius: 20px;
+}
+
+.subtitulo {
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 65px;
+    font-weight: normal;
+    line-height: 1.1;
+}
+
+.hero h2 em {
+    display: block;
+    font-family: "Allura", cursive;
+    font-size: 80px;
+    color: #a85f55;
+}
+
+.botoes {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.botoes a {
+    padding: 14px 25px;
+    border-radius: 30px;
+    background-color: #a85f55;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.botoes a:last-child {
+    background-color: transparent;
+    border: 1px solid #a85f55;
+    color: #a85f55;
+}
+
+
+/* Frase conceitual */
+.frase {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.frase p {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.frase blockquote {
+    font-family: "Allura", cursive;
+    font-size: 42px;
+}
+
+
+/* Categorias */
+.categorias {
+    padding: 40px 7%;
+    text-align: center;
+}
+
+.categorias ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.categorias a {
+    display: block;
+    padding: 10px 20px;
+    border: 1px solid #c9a49c;
+    border-radius: 25px;
+    font-size: 12px;
+}
+
+.categorias a:hover {
+    background-color: #a85f55;
+    color: white;
+}
+
+
+/* Página de receitas */
+/* Faixa de toalha de piquenique */
+
+.faixa-piquenique {
+    width: 100%;
+    height: 16px;
+
+    background-image: url("../images/backgrounds/back-toalha.png");
+
+    background-size: 420px auto;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+
+/* Categorias */
+
+.categorias {
+    padding: 35px 7% 15px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.categorias ul {
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+}
+
+.categorias li a {
+    display: block;
+
+    padding: 9px 22px;
+
+    border: 1px solid #c9a49c;
+    border-radius: 30px;
+
+    color: #7a5148;
+
+    font-size: 11px;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.categorias li a:hover {
+    background-color: #a85f55;
+    color: white;
+}
+
+
+/* Área principal das receitas */
+
+.receitas {
+    padding: 30px 7% 55px;
+}
+
+
+/* Título */
+
+.titulo {
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+.detalhe-titulo {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 28px;
+
+    color: #a85f55;
+}
+
+.titulo h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 42px;
+
+    font-weight: normal;
+
+    color: #5f4039;
+}
+
+.titulo p {
+    margin-top: 10px;
+
+    font-family: "Allura", cursive;
+
+    font-size: 27px;
+
+    color: #8a6259;
+}
+
+
+/* Cards principais */
+
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    max-width: 1050px;
+
+    margin: 0 auto;
+}
+
+
+/* Card */
+
+.card {
+    background-color: #fffaf5;
+
+    border: 1px solid rgba(168, 95, 85, 0.20);
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(100, 70, 60, 0.08);
+
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Imagem dos cards */
+
+.imagem {
+    width: 100%;
+
+    height: 245px;
+
+    overflow: hidden;
+}
+
+.imagem img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.4s ease;
+}
+
+.card:hover .imagem img {
+    transform: scale(1.04);
+}
+
+
+/* Conteúdo */
+/* Faixa de toalha de piquenique */
+
+.faixa-piquenique {
+    width: 100%;
+    height: 16px;
+
+    background-image: url("../images/backgrounds/back-toalha.png");
+
+    background-size: 420px auto;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.card-conteudo {
+    padding: 22px;
+
+    text-align: center;
+}
+
+.card-conteudo > span:first-child {
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    color: #a85f55;
+}
+
+.card-conteudo h3 {
+    margin: 10px 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 21px;
+
+    font-weight: normal;
+
+    line-height: 1.35;
+
+    color: #4f3630;
+}
+
+.card-conteudo p {
+    margin: 0;
+
+    font-family: "Allura", cursive;
+
+    font-size: 21px;
+
+    color: #9b6c62;
+}
+
+.laco-card {
+    display: block;
+
+    margin-top: 10px;
+
+    font-size: 17px !important;
+
+    letter-spacing: 0 !important;
+}
+
+
+/* Recomendações */
+
+.recomendacoes {
+    padding: 55px 7% 60px;
+
+    background-color: #fff9f3;
+}
+
+
+/* Título das recomendações */
+
+.titulo-recomendacoes {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    column-gap: 18px;
+
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+.titulo-recomendacoes h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 34px;
+
+    font-weight: normal;
+
+    color: #6b443b;
+}
+
+.titulo-recomendacoes > span {
+    font-size: 30px;
+
+    color: #a85f55;
+}
+
+.titulo-recomendacoes p {
+    width: 100%;
+
+    margin-top: 8px;
+
+    font-family: "Allura", cursive;
+
+    font-size: 23px;
+
+    color: #8a6259;
+}
+
+
+/* Mini cards */
+
+.mini-cards {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+/* Mini card */
+
+.mini-card {
+    padding: 15px;
+
+    text-align: center;
+
+    background-color: #fffaf5;
+
+    border: 1px solid rgba(168, 95, 85, 0.20);
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 18px rgba(100, 70, 60, 0.07);
+
+    transition: transform 0.3s ease;
+}
+
+.mini-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 22px rgba(100, 70, 60, 0.10);
+}
+
+/* Mini imagem */
+
+.mini-imagem {
+    width: 100%;
+
+    height: 180px;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+}
+
+.mini-imagem img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.4s ease;
+}
+
+.mini-card:hover .mini-imagem img {
+    transform: scale(1.05);
+}
+
+
+/* Nome da receita */
+
+.mini-card h3 {
+    margin-top: 12px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 15px;
+
+    font-weight: normal;
+
+    line-height: 1.35;
+
+    color: #513a34;
+}
+
+
+/* Categoria */
+
+.mini-card > span {
+    display: block;
+
+    margin-top: 8px;
+
+    font-size: 8px;
+
+    letter-spacing: 1.5px;
+
+    color: #a85f55;
+}
+/* Contato */
+
+.contato {
+    min-height: 650px;
+    padding: 90px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url("../images/backgrounds/back-toalha.png");
+    background-size: 650px auto;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.contato-conteudo {
+    width: 100%;
+    max-width: 750px;
+    padding: 55px 70px;
+
+    text-align: center;
+
+    background-color: rgba(248, 241, 232, 0.92);
+
+    border-radius: 22px;
+
+    box-shadow: 0 8px 30px rgba(100, 70, 60, 0.12);
+}
+
+
+/* Pequeno texto acima do título */
+
+.contato-subtitulo {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #a85f55;
+}
+
+
+/* Título */
+
+.contato h2 {
+    margin-top: 15px;
+
+    font-family: "Playfair Display", serif;
+    font-size: 45px;
+    font-weight: normal;
+
+    color: #5f4039;
+}
+
+
+/* Texto principal */
+
+.contato-conteudo > p {
+    max-width: 600px;
+
+    margin: 20px auto;
+
+    font-size: 13px;
+    line-height: 1.8;
+
+    color: #5f4039;
+}
+
+
+/* Formulário */
+
+form {
+    max-width: 500px;
+
+    margin: 35px auto 15px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    text-align: left;
+}
+
+
+/* Nome do campo */
+
+form label {
+    font-size: 12px;
+    color: #5f4039;
+}
+
+
+/* Campo de e-mail */
+
+form input {
+    width: 100%;
+
+    padding: 15px;
+
+    border: 1px solid #c9a49c;
+    border-radius: 8px;
+
+    background-color: #fffaf5;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+
+    box-sizing: border-box;
+}
+
+
+/* Campo selecionado */
+
+form input:focus {
+    outline: none;
+
+    border-color: #a85f55;
+
+    box-shadow: 0 0 0 2px rgba(168, 95, 85, 0.10);
+}
+
+
+/* Botão */
+
+form button {
+    margin-top: 8px;
+
+    padding: 15px;
+
+    border: none;
+    border-radius: 30px;
+
+    background-color: #a85f55;
+
+    color: white;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* Efeito do botão */
+
+form button:hover {
+    opacity: 0.85;
+
+    transform: translateY(-2px);
+}
+
+
+/* Texto de privacidade */
+
+.privacidade {
+    font-family: "Allura", cursive !important;
+
+    font-size: 22px !important;
+
+    color: #a85f55 !important;
+}
+
+
+/* Informações de contato */
+
+.contato-info {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 80px;
+
+    margin-top: 40px;
+
+    padding-top: 30px;
+
+    border-top: 1px solid rgba(168, 95, 85, 0.25);
+}
+
+
+/* Cada informação */
+
+.info-item {
+    min-width: 180px;
+}
+
+
+/* Título da informação */
+
+.info-item span {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    color: #a85f55;
+
+    text-transform: uppercase;
+}
+
+
+/* Telefone / Instagram */
+
+.info-item p {
+    margin: 0;
+
+    font-size: 13px;
+
+    color: #5f4039;
+}
+/* Rodapé */
+footer {
+    padding: 50px 7%;
+    text-align: center;
+    background-color: #e8d5c5;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 25px 0;
+}
+
+footer nav a {
+    font-size: 12px;
+}
+
+footer > p {
+    font-size: 11px;
+}
