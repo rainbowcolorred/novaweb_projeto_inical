@@ -1,0 +1,264 @@
+/* ==============================
+   CONFIGURAÇÕES GERAIS
+   ============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f8f1e8;
+
+    color: #4a342b;
+
+    /* Fundo com leve textura */
+    background-image:
+        linear-gradient(rgba(248, 241, 232, 0.88),
+        rgba(248, 241, 232, 0.88)),
+        url("../images/backgrounds/comidas-back.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/* ==============================
+   CAIXA DO LOGIN
+   ============================== */
+
+.login-container {
+    width: 380px;
+
+    padding: 42px 40px;
+
+    background-color: rgba(255, 253, 249, 0.96);
+
+    border: 1px solid #e3cfc0;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 30px rgba(74, 52, 43, 0.15);
+
+    position: relative;
+}
+
+
+/* Detalhe decorativo superior */
+
+.login-container::before {
+    content: "♡";
+
+    position: absolute;
+
+    top: -18px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #c98282;
+
+    color: #fffaf5;
+
+    border-radius: 50%;
+
+    font-size: 18px;
+}
+
+
+/* ==============================
+   TÍTULO
+   ============================== */
+
+h1 {
+    font-family: 'Playfair Display', serif;
+
+    text-align: center;
+
+    color: #6b4538;
+
+    font-size: 32px;
+
+    margin-bottom: 8px;
+}
+
+
+/* Pequeno detalhe abaixo do título */
+
+h1::after {
+    content: "♡";
+
+    display: block;
+
+    color: #c98282;
+
+    font-size: 16px;
+
+    margin-top: 4px;
+}
+
+
+/* ==============================
+   LABELS
+   ============================== */
+
+label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #6b4538;
+
+    font-size: 14px;
+
+    font-weight: 500;
+}
+
+
+/* ==============================
+   CAMPOS DE ENTRADA
+   ============================== */
+
+input {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    margin-bottom: 18px;
+
+    background-color: #fffaf5;
+
+    border: 1px solid #d9c1b2;
+
+    border-radius: 9px;
+
+    color: #4a342b;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+
+/* Campo selecionado */
+
+input:focus {
+    outline: none;
+
+    border-color: #c98282;
+
+    box-shadow: 0 0 0 3px rgba(201, 130, 130, 0.15);
+}
+
+
+/* Texto dentro do campo */
+
+input::placeholder {
+    color: #a99489;
+}
+
+
+/* ==============================
+   LINKS
+   ============================== */
+
+a {
+    color: #a85f68;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #7d414a;
+
+    text-decoration: underline;
+}
+
+
+/* ==============================
+   BOTÃO
+   ============================== */
+
+button {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-top: 20px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background-color: #a85f68;
+
+    color: #fffaf5;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #874b53;
+
+    transform: translateY(-1px);
+}
+
+
+/* ==============================
+   TEXTO DE CADASTRO
+   ============================== */
+
+p {
+    text-align: center;
+
+    margin-top: 20px;
+
+    color: #806c61;
+
+    font-size: 13px;
+}
+
+
+/* ==============================
+   MENSAGEM DO JAVASCRIPT
+   ============================== */
+
+#mensagem {
+    margin-top: 15px;
+
+    font-size: 13px;
+
+    font-weight: 500;
+}
