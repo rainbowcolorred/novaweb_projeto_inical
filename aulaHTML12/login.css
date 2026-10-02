@@ -104,7 +104,7 @@ h1 {
 /* Pequeno detalhe abaixo do título */
 
 h1::after {
-    content: "♡";
+    content: "-- ♡ --";
 
     display: block;
 
