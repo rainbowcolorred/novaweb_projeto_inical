@@ -1,0 +1,182 @@
+/* =========================================
+   AULA HTML 11 - TABELAS E DADOS TABULADOS
+   ========================================= */
+
+/* Cores inspiradas no universo Hello Kitty */
+:root {
+    --rosa: #e86b93;
+    --rosa-claro: #ffd9e5;
+    --rosa-bebe: #fff0f5;
+    --vermelho: #d94f70;
+    --branco: #ffffff;
+    --escuro: #5a3945;
+    --azul: #9ed9e8;
+}
+
+/* Configuração geral */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--rosa-bebe);
+    color: var(--escuro);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Cabeçalho */
+
+header {
+    background-color: var(--rosa);
+    padding: 25px 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 25px;
+    color: var(--branco);
+    font-family: Georgia, serif;
+    font-size: 36px;
+}
+
+/* Menu */
+
+nav {
+    background-color: var(--branco);
+    padding: 12px;
+}
+
+nav a {
+    color: var(--vermelho);
+    font-size: 20px;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--rosa);
+    text-decoration: underline;
+}
+
+/* Área principal */
+
+main {
+    padding: 30px 10px;
+}
+
+/* =========================================
+   TABELA SIMPLES
+   ========================================= */
+
+.tabela-simples {
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: var(--branco);
+    border: 3px solid var(--rosa);
+}
+
+.tabela-simples th,
+.tabela-simples td {
+    border: 2px solid var(--rosa);
+    padding: 8px;
+    text-align: center;
+}
+
+.tabela-simples th {
+    background-color: var(--rosa-claro);
+    color: var(--vermelho);
+    font-family: Georgia, serif;
+    font-size: 19px;
+}
+
+.tabela-simples td {
+    font-size: 18px;
+}
+
+.tabela-simples tr:nth-child(even) {
+    background-color: #fff7fa;
+}
+
+.tabela-simples tr:hover {
+    background-color: var(--rosa-claro);
+}
+
+/* Fotos dos personagens */
+
+.tabela-simples img {
+    width: 70px;
+    height: 55px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+
+/* =========================================
+   TABELA DA COPA
+   ========================================= */
+
+.tabela-copa {
+    width: 95%;
+    max-width: 1100px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: var(--branco);
+    border: 3px solid var(--rosa);
+}
+
+.tabela-copa th,
+.tabela-copa td {
+    border: 2px solid var(--rosa);
+    padding: 12px;
+    text-align: center;
+}
+
+.tabela-copa thead th {
+    background-color: var(--rosa);
+    color: var(--branco);
+    font-family: Georgia, serif;
+}
+
+.tabela-copa .titulo-tabela {
+    background-color: var(--vermelho);
+    color: var(--branco);
+    font-size: 24px;
+}
+
+.tabela-copa .grupo {
+    background-color: var(--rosa-claro);
+    color: var(--vermelho);
+    font-weight: bold;
+}
+
+.tabela-copa tbody tr:nth-child(even) {
+    background-color: #fff7fa;
+}
+
+.tabela-copa tbody tr:hover {
+    background-color: #ffe1eb;
+}
+
+.tabela-copa td:first-child {
+    font-weight: bold;
+}
+
+.tabela-copa .classificado {
+    font-weight: bold;
+    color: #b13b5a;
+}
+
+/* Rodapé */
+
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--rosa);
+    color: var(--branco);
+}

@@ -118,3 +118,30 @@ Código |	       Etapa	        |           Atividades
 | Concluído | Organizar layout HOME |
 | Concluído | Atualizar README |
 | Concluído | Separar categorias de receitas |
+
+--------------------------------------------------------------------------------------------------
+## Aula 12 - Introdução aos Formulários Web
+
+Nesta aula foi desenvolvido um formulário de login utilizando HTML, CSS e JavaScript.
+
+O projeto apresenta uma tela de login inspirada na identidade visual do blog culinário **Mesa Posta**, utilizando uma estética rústica, acolhedora e delicada, com tons de creme, marrom e rosado.
+
+### Funcionalidades
+
+- Campo para inserção de e-mail;
+- Campo de senha com conteúdo oculto;
+- Link para recuperação de senha;
+- Link para cadastro de usuário;
+- Botão de entrada;
+- Validação dos campos utilizando JavaScript;
+- Mensagens de erro para dados inválidos ou campos não preenchidos;
+- Estilização da interface utilizando CSS;
+- Utilização da tag `<form>` e do método `POST`.
+
+### Arquivos
+
+- `login.html` - estrutura da tela e formulário de login;
+- `login.css` - estilização e identidade visual da página;
+- `login.js` - validação dos dados preenchidos no formulário.
+
+## SEM BACK-END
