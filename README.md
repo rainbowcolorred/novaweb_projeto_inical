@@ -371,7 +371,353 @@ A identidade visual seguirá o conceito do blog culinário **Mesa Posta**, utili
 - [W3Schools — HTML/CSS Forms and Validation](https://www.w3schools.com/htmlcss/htmlcss_forms.asp)
 - [W3C — WCAG: Contrast (Minimum)](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum)
 ---------------------------------------------------------------------------------------------------
+# Projeto Nova-Web - UI/UX Design
 
+## Aula 09: UX de Tabelas de Dados e Telas de Perfil
+
+Esta atividade tem como objetivo aplicar conceitos de UX (User Experience) no desenvolvimento de interfaces para sistemas corporativos, considerando a organização das informações, facilidade de navegação, consistência visual e usabilidade.
+
+---
+
+# 1. Pesquisa Teórica - UX para Tabelas Corporativas
+
+## 1.1 Alinhamento de Dados
+
+O alinhamento das informações em uma tabela deve facilitar a leitura, comparação e identificação dos dados apresentados.
+
+- **Textos:** devem ser alinhados à esquerda, pois esse formato facilita a leitura de informações textuais.
+- **Números e valores monetários:** devem ser alinhados à direita, facilitando a comparação entre diferentes valores.
+- **Status:** podem ser centralizados ou apresentados por meio de badges/pills para facilitar a identificação visual.
+- **Ações rápidas:** podem ser centralizadas ou alinhadas à direita, mantendo os ícones de ação organizados.
+
+A utilização de alinhamentos consistentes evita uma aparência desorganizada e facilita a localização das informações.
+
+---
+
+## 1.2 Filtros e Busca
+
+Os recursos de pesquisa e filtragem devem estar posicionados em locais de fácil acesso.
+
+- O campo de pesquisa principal deve ficar na parte superior da tabela.
+- Um ícone de lupa pode ser utilizado para indicar visualmente a função de busca.
+- Filtros por categoria ou status podem ser organizados em menus suspensos (dropdowns).
+- Os filtros devem possuir nomes claros e objetivos.
+- A organização dos filtros deve evitar excesso de elementos na tela.
+
+A busca permite localizar rapidamente registros específicos, enquanto os filtros ajudam a reduzir a quantidade de informações exibidas.
+
+---
+
+## 1.3 Hierarquia Visual
+
+A hierarquia visual organiza os elementos de acordo com sua importância, permitindo que o usuário compreenda a interface com mais facilidade.
+
+Para tabelas extensas, podem ser utilizados:
+
+- **Cabeçalhos fixos (sticky header):** mantêm os nomes das colunas visíveis durante a rolagem.
+- **Zebra striping:** utilização de cores alternadas nas linhas para facilitar a leitura horizontal.
+- **Bordas sutis:** ajudam a separar as informações sem deixar a interface visualmente carregada.
+- **Cabeçalhos destacados:** diferenciam os títulos das colunas dos dados apresentados.
+- **Badges de status:** facilitam a identificação rápida da situação de cada registro.
+
+A hierarquia visual deve destacar as informações importantes sem utilizar elementos desnecessários.
+
+---
+
+# 2. Especificação do Protótipo no Figma
+
+## 2.1 Link do Projeto
+
+**Link do Projeto no Figma:**  
+[Cole o link do projeto aqui]
+
+---
+
+## 2.2 Nome do Arquivo
+
+O arquivo desenvolvido no Figma foi nomeado como:
+
+**Nova-Web - UI/UX Dashboard**
+
+---
+
+# 3. Tela de Perfil do Usuário
+
+A primeira tela desenvolvida apresenta as informações de um usuário e permite consultar ou editar seus dados.
+
+## 3.1 Header / Topo
+
+O cabeçalho apresenta:
+
+- Foto de perfil (avatar);
+- Nome do usuário;
+- Cargo ou papel no sistema;
+- Status do usuário;
+- Identificação visual do sistema.
+
+O status é apresentado de forma visual para facilitar a identificação de usuários ativos ou inativos.
+
+---
+
+## 3.2 Informações Pessoais
+
+A área de informações pessoais apresenta os principais dados do usuário.
+
+Os campos utilizados são:
+
+- Nome completo;
+- E-mail;
+- Telefone;
+- Perfil de acesso.
+
+Os campos podem ser apresentados como editáveis ou somente para leitura (Read-only), dependendo da permissão do usuário.
+
+---
+
+## 3.3 Aba de Segurança
+
+A aba de segurança concentra funcionalidades relacionadas à proteção da conta.
+
+Foram consideradas as seguintes opções:
+
+- Alteração de senha;
+- Autenticação em duas etapas;
+- Configurações relacionadas à segurança da conta.
+
+A separação dessas informações em uma aba própria evita que a tela principal fique sobrecarregada.
+
+---
+
+## 3.4 Ações
+
+A tela possui dois tipos principais de ações:
+
+### Botão Primário
+
+**Salvar Alterações**
+
+É utilizado para confirmar e salvar as modificações realizadas pelo usuário.
+
+### Botão Secundário
+
+**Cancelar**
+
+Permite cancelar as alterações realizadas sem utilizar a ação principal.
+
+A diferenciação visual entre os botões estabelece uma hierarquia de ações.
+
+---
+
+# 4. Área de Consulta - Tabela de Dados
+
+A segunda tela desenvolvida apresenta uma área para consulta e gerenciamento de usuários.
+
+---
+
+## 4.1 Barra Superior de Controle
+
+A parte superior da tabela apresenta ferramentas para facilitar a consulta e o gerenciamento dos registros.
+
+Foram utilizados:
+
+- **Campo de busca:** permite pesquisar usuários.
+- **Ícone de lupa:** identifica visualmente a função de pesquisa.
+- **Filtro por status:** permite visualizar usuários de acordo com sua situação.
+- **Exportação:** permite representar ações para exportação dos dados em PDF ou CSV.
+- **Adicionar Novo:** botão utilizado para iniciar o cadastro de um novo usuário.
+
+A organização desses controles facilita o acesso às principais funções da tabela.
+
+---
+
+# 5. Estrutura da Tabela
+
+A tabela foi estruturada para apresentar informações de maneira organizada.
+
+## 5.1 Cabeçalho
+
+As colunas utilizadas são:
+
+| Coluna | Função |
+|---|---|
+| ID | Identificação do usuário |
+| Nome | Nome completo do usuário |
+| E-mail | Endereço de e-mail |
+| Função | Cargo ou função no sistema |
+| Status | Situação atual do usuário |
+| Ações | Operações disponíveis para o registro |
+
+---
+
+## 5.2 Linhas de Dados
+
+A tabela possui pelo menos cinco registros simulados.
+
+Exemplo:
+
+| ID | Nome | E-mail | Função | Status | Ações |
+|---|---|---|---|---|---|
+| 001 | Ana Souza | ana@email.com | Administrador | Ativo | Visualizar / Editar / Excluir |
+| 002 | João Silva | joao@email.com | Operador | Ativo | Visualizar / Editar / Excluir |
+| 003 | Maria Santos | maria@email.com | Analista | Inativo | Visualizar / Editar / Excluir |
+| 004 | Pedro Oliveira | pedro@email.com | Operador | Ativo | Visualizar / Editar / Excluir |
+| 005 | Lucas Costa | lucas@email.com | Analista | Inativo | Visualizar / Editar / Excluir |
+
+Os registros são utilizados apenas para representar o funcionamento visual da interface.
+
+---
+
+# 6. Componentes de Status
+
+Os status dos usuários são apresentados por meio de badges/pills.
+
+### Usuário Ativo
+
+O status **Ativo** utiliza uma identificação visual em verde para facilitar sua localização.
+
+### Usuário Inativo
+
+O status **Inativo** utiliza uma identificação visual em cinza.
+
+A utilização de badges facilita a identificação do estado de cada usuário sem a necessidade de ler informações adicionais.
+
+---
+
+# 7. Ações por Linha
+
+Cada registro possui ações rápidas para gerenciamento dos usuários.
+
+Foram consideradas três ações:
+
+- **Visualizar:** permite consultar os dados do usuário.
+- **Editar:** permite alterar as informações do usuário.
+- **Excluir:** representa a ação de remoção do registro.
+
+Os ícones são utilizados para economizar espaço e manter a tabela organizada.
+
+---
+
+# 8. Rodapé da Tabela
+
+O rodapé apresenta informações sobre a quantidade de registros e controles de navegação.
+
+Foi utilizado o texto:
+
+**Mostrando 1-10 de 50 resultados**
+
+Também foram adicionados controles de paginação:
+
+- **Anterior**
+- **Próximo**
+
+A paginação permite dividir grandes quantidades de registros em páginas menores, facilitando a navegação.
+
+---
+
+# 9. Princípios de UX Aplicados
+
+## 9.1 Usabilidade
+
+A interface foi organizada para que o usuário consiga localizar informações e executar ações com facilidade.
+
+A utilização de busca, filtros e paginação reduz a dificuldade de encontrar registros em tabelas com muitos dados.
+
+---
+
+## 9.2 Consistência
+
+Os componentes seguem padrões visuais consistentes.
+
+São utilizados padrões semelhantes para:
+
+- Botões;
+- Campos de entrada;
+- Abas;
+- Badges;
+- Ícones;
+- Espaçamentos;
+- Tipografia;
+- Cores.
+
+A consistência ajuda o usuário a compreender o funcionamento da interface.
+
+---
+
+## 9.3 Hierarquia Visual
+
+Os elementos foram organizados de acordo com seu nível de importância.
+
+Títulos, cabeçalhos, botões principais e status possuem destaque visual para facilitar a identificação.
+
+---
+
+## 9.4 Feedback Visual
+
+Os componentes podem apresentar diferentes estados para informar ao usuário o resultado de suas ações.
+
+Exemplos:
+
+- Campo em foco;
+- Botão em estado de interação;
+- Status ativo ou inativo;
+- Mensagens de confirmação;
+- Mensagens de erro.
+
+O feedback visual ajuda o usuário a compreender o que está acontecendo no sistema.
+
+---
+
+## 9.5 Acessibilidade
+
+A interface deve considerar princípios de acessibilidade, como:
+
+- Contraste adequado entre texto e fundo;
+- Tamanho legível das informações;
+- Áreas de clique adequadas;
+- Identificação clara dos campos;
+- Navegação por teclado;
+- Uso de textos e rótulos compreensíveis.
+
+Esses cuidados permitem que diferentes usuários consigam utilizar o sistema com maior facilidade.
+
+---
+
+# 10. Organização do Projeto no Figma
+
+O arquivo foi organizado em duas telas principais:
+
+1. **Perfil de Usuário**
+2. **Área de Consulta - Tabela de Dados**
+
+Também foram utilizados componentes reutilizáveis para manter a consistência da interface.
+
+A utilização de componentes facilita futuras alterações e permite que elementos semelhantes mantenham o mesmo padrão visual.
+
+---
+
+# 11. Conclusão
+
+A atividade permitiu aplicar conceitos de UX no desenvolvimento de uma interface voltada para sistemas corporativos.
+
+A organização das informações em tabelas, a utilização de busca, filtros, paginação, badges de status e ações rápidas contribuem para uma interface mais organizada e fácil de utilizar.
+
+O desenvolvimento da tela de perfil também permitiu trabalhar com formulários, abas, permissões e ações de usuário.
+
+As decisões realizadas no Figma foram baseadas em princípios de usabilidade, consistência, hierarquia visual e acessibilidade, buscando criar uma interface clara, organizada e adequada para diferentes necessidades de utilização.
+
+---
+
+## 12. Versionamento
+
+Após a criação e atualização da documentação, foram utilizados os seguintes comandos Git para registrar as alterações:
+
+```bash
+git add README.md
+
+git commit -m "docs: adiciona conceitos de UX de tabelas e perfil no README"
+
+git push origin main
+--------------------------------------------------------------------------------------------------
 ## Aula 12 - Introdução aos Formulários Web
 
 Nesta aula foi desenvolvido um formulário de login utilizando HTML, CSS e JavaScript.
