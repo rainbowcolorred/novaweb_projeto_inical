@@ -120,7 +120,7 @@ Código |	       Etapa	        |           Atividades
 | Concluído | Separar categorias de receitas |
 
 --------------------------------------------------------------------------------------------------
-# Projeto Nova-Web — Especificações de UI/UX
+# Projeto Nova-Web — Especificações de UI/UX -- AULA 08
 ## Tela de Login
 
 Este documento apresenta as especificações de UI/UX utilizadas no desenvolvimento da tela de login do projeto Nova-Web, considerando princípios de usabilidade, validação de formulários e acessibilidade.
