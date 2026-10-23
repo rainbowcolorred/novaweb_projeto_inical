@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>Meu Perfil</h1>
+        <p>Atualize suas informações pessoais</p>
+    </header>
+
+    <main class="container">
+        <form id="formPerfil" class="form" novalidate>
+            <div id="mensagem" class="mensagem" role="status" aria-live="polite" hidden></div>
+
+            <section class="foto-perfil">
+                <img src="perfil.webp" alt="Foto ilustrativa de perfil">
+                <p>Informações do usuário</p>
+            </section>
+
+            <div class="form-group">
+                <label for="nome">Nome completo *</label>
+                <input type="text" class="form-control" id="nome" name="nome"
+                       placeholder="Digite seu nome completo" required minlength="3">
+                <small class="erro" id="erroNome"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail *</label>
+                <input type="email" class="form-control" id="email" name="email"
+                       placeholder="exemplo@email.com" required>
+                <small class="erro" id="erroEmail"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input type="tel" class="form-control" id="telefone" name="telefone"
+                       placeholder="(14) 99999-9999" maxlength="15">
+            </div>
+
+            <fieldset class="form-group">
+                <legend>Turno de preferência *</legend>
+                <label class="opcao"><input type="radio" name="turno" value="Manhã" required> Manhã</label>
+                <label class="opcao"><input type="radio" name="turno" value="Tarde"> Tarde</label>
+                <label class="opcao"><input type="radio" name="turno" value="Noite"> Noite</label>
+                <small class="erro" id="erroTurno"></small>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <legend>Áreas de interesse (selecione pelo menos uma) *</legend>
+                <label class="opcao"><input type="checkbox" name="interesses" value="Desenvolvimento Web"> Desenvolvimento Web</label>
+                <label class="opcao"><input type="checkbox" name="interesses" value="Banco de Dados"> Banco de Dados</label>
+                <label class="opcao"><input type="checkbox" name="interesses" value="Design"> Design</label>
+                <label class="opcao"><input type="checkbox" name="interesses" value="Redes"> Redes</label>
+                <small class="erro" id="erroInteresses"></small>
+            </fieldset>
+
+            <div class="form-group">
+                <label for="cargo">Cargo ou função *</label>
+                <select class="form-control" id="cargo" name="cargo" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="Estudante">Estudante</option>
+                    <option value="Desenvolvedor(a)">Desenvolvedor(a)</option>
+                    <option value="Designer">Designer</option>
+                    <option value="Analista">Analista</option>
+                    <option value="Outro">Outro</option>
+                </select>
+                <small class="erro" id="erroCargo"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="biografia">Sobre mim</label>
+                <textarea class="form-control" id="biografia" name="biografia"
+                          rows="5" maxlength="300"
+                          placeholder="Conte um pouco sobre você (até 300 caracteres)"></textarea>
+                <div class="contador"><span id="totalCaracteres">0</span>/300 caracteres</div>
+            </div>
+
+            <label class="opcao termos">
+                <input type="checkbox" id="confirmacao">
+                Confirmo que as informações acima estão corretas. *
+            </label>
+            <small class="erro" id="erroConfirmacao"></small>
+
+            <div class="botoes">
+                <button type="submit" class="btn btn-primary">Salvar perfil</button>
+                <button type="reset" class="btn btn-secundario">Limpar formulário</button>
+            </div>
+            <p class="observacao">* Campos obrigatórios</p>
+        </form>
+    </main>
+
+    <footer>
+        <p>Atividade prática — Aula 13: Elementos Avançados de Formulário</p>
+    </footer>
+</body>
+</html>
