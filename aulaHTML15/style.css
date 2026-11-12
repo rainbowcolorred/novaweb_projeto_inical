@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+.container {
+    width: 100%;
+    max-width: 520px;
+    background-color: #fff;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+header h1 {
+    color: #27364b;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #687386;
+    font-size: 14px;
+}
+
+.campo {
+    margin-bottom: 17px;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd1da;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: 2px solid #9bb8e5;
+    border-color: #527dbb;
+}
+
+.digitando {
+    min-height: 20px;
+    margin: 4px 0 18px;
+    color: #687386;
+    font-size: 13px;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+    background-color: #365f96;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #284a78;
+}
+
+.mensagem {
+    display: none;
+    margin-bottom: 20px;
+    padding: 13px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.mensagem.sucesso {
+    display: block;
+    color: #205b36;
+    background-color: #e3f4e8;
+    border: 1px solid #a9d7b5;
+}
+
+.mensagem.erro {
+    display: block;
+    color: #8b2525;
+    background-color: #fdeaea;
+    border: 1px solid #edb5b5;
+}
