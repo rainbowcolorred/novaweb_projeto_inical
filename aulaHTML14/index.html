@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula 14 - CSS para Formulários</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Aluno(a): __________________ | Turma: ______ | Curso: Técnico em Desenvolvimento de Sistemas | Aula 14 -->
+  <header class="cabecalho">
+    <h1>Aula 14 - CSS para Formulários</h1>
+    <p>Atividade prática: habilitar e desabilitar campos</p>
+  </header>
+
+  <main class="container">
+    <h2>Formulário de cadastro</h2>
+    <p>Clique em <strong>Habilitar</strong> para editar um campo. Ao sair dele, será desabilitado novamente.</p>
+    <form id="formulario">
+      <div class="campo">
+        <label for="nome">Nome completo <span>*</span></label>
+        <div class="linha-campo">
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required disabled>
+          <button type="button" class="habilitar" data-target="nome">Habilitar</button>
+        </div>
+      </div>
+      <div class="campo">
+        <label for="email">E-mail <span>*</span></label>
+        <div class="linha-campo">
+          <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required disabled>
+          <button type="button" class="habilitar" data-target="email">Habilitar</button>
+        </div>
+      </div>
+      <div class="campo">
+        <label for="telefone">Telefone</label>
+        <div class="linha-campo">
+          <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" disabled>
+          <button type="button" class="habilitar" data-target="telefone">Habilitar</button>
+        </div>
+      </div>
+      <div class="campo">
+        <label for="cidade">Cidade</label>
+        <div class="linha-campo">
+          <input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade" disabled>
+          <button type="button" class="habilitar" data-target="cidade">Habilitar</button>
+        </div>
+      </div>
+      <p class="observacao">* Campos obrigatórios. Os dados são apenas demonstrativos.</p>
+    </form>
+  </main>
+  <footer><p>Atividade desenvolvida para a Aula 14.</p></footer>
+</body>
+</html>

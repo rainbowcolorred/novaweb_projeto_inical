@@ -1,0 +1,46 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 24px; font-family: Arial, Helvetica, sans-serif;
+  color: #302b2b; background: #f3eee9;
+}
+.cabecalho { text-align: center; margin: 12px auto 28px; }
+.cabecalho h1 { margin-bottom: 8px; color: #493a35; }
+.cabecalho p, footer, .observacao { color: #74645e; }
+.container {
+  width: 100%; max-width: 680px; margin: 0 auto; padding: 28px;
+  background: #fff; border: 1px solid #e4d9d3; border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(54,39,32,.08);
+}
+h2 { margin-top: 0; color: #493a35; }
+.campo { margin: 22px 0; }
+.campo label { display: block; margin-bottom: 8px; font-weight: bold; }
+.campo label span { color: #b33b32; }
+.linha-campo { display: flex; gap: 10px; }
+input {
+  flex: 1; min-width: 0; padding: 12px; font-size: 1rem;
+  border: 1px solid #cfc2bc; border-radius: 6px;
+}
+/* Campos desabilitados */
+input:disabled { color: #777; background: #eeeae8; border-style: dashed; cursor: not-allowed; }
+/* Campos obrigatórios */
+input:required { border-left: 4px solid #c66b5d; }
+/* Campo que está recebendo o foco */
+input:focus { outline: 2px solid #d89a8f; border-color: #a94e42; background: #fffaf8; }
+/* Campo somente leitura */
+input:read-only { background: #f1edf5; }
+/* Destaque para campo com foco automático, caso o atributo autofocus seja usado */
+input:autofocus { box-shadow: 0 0 0 3px rgba(198,107,93,.18); }
+.habilitar {
+  padding: 0 17px; border: 0; border-radius: 6px; color: white;
+  background: #a94e42; font-weight: bold; cursor: pointer;
+}
+.habilitar:hover { background: #843b33; }
+.habilitar:focus { outline: 2px solid #d89a8f; outline-offset: 2px; }
+.observacao { margin-top: 26px; font-size: .88rem; }
+footer { margin: 22px auto; text-align: center; font-size: .9rem; }
+@media (max-width: 520px) {
+  body { padding: 14px; }
+  .container { padding: 19px; }
+  .linha-campo { flex-direction: column; }
+  .habilitar { min-height: 42px; }
+}
